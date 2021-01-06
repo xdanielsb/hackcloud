@@ -82,6 +82,12 @@ export default {
         return;
       }
       const baseURI = "http://localhost:5000/";
+      const config = {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      }
+      const formData = new FormData();
+
+      formData.append('file', this.image);
       this.$http
         .post(baseURI, { image: this.imageSrc })
         .then((result) => {
