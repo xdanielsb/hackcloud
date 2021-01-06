@@ -81,7 +81,7 @@ export default {
         alert("Please select an image.");
         return;
       }
-      const baseURI = "https//localhost:5000/endpoint";
+      const baseURI = "http://localhost:5000/";
       this.$http
         .post(baseURI, { image: this.imageSrc })
         .then((result) => {
