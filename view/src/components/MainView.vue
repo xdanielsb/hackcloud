@@ -29,6 +29,7 @@
         class="ml-3"
         @click="clearImage"
       >Clear image</b-button>
+      <div v-if="response" > {{response}} </div>
     </b-form>
   </b-container>
 </template>
@@ -47,6 +48,7 @@ export default {
     return {
       image: null,
       imageSrc: null,
+      response:null,
     };
   },
   computed: {
@@ -89,9 +91,22 @@ export default {
 
       formData.append('file', this.image);
       this.$http
-        .post(baseURI, { image: this.imageSrc })
+        .post(baseURI, formData, config)
         .then((result) => {
-          console.log(result);
+          this.response = result;
+        }).catch(function (error) {
+          if (error.response) {
+            // Request made and server responded
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            // The request was made but no response was received
+            console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+          }
         });
     },
   },
