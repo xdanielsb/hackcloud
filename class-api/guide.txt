@@ -1,0 +1,5 @@
+Avoir Python 3 installé
+Installer Flask, Keras (en éxécutant la commande pip install Flask, Keras)
+Exécuter la commande export FLASK_APP=api.py
+Exécuter la commande flask run (pour exécuter l'application)
+Ouvrir un navigateur web à l'adresse http://127.0.0.1:5000/dog.png
