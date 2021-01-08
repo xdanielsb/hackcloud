@@ -1,4 +1,4 @@
-# Guide d'installation
+# Microservice - Image Classifier
 
 This is a small project that uses deep neural networks + imagenet to classify a given
 image into a class, it uses Vuejs and Keras for the backend, it is a prototype and has 
@@ -9,8 +9,8 @@ This is a small result after loading a random image from google
 
 ## Download the project
 ```sh
-$ git clone https://github.com/xdanielsb/hackcloud.git`
-$ cd hackcloud`
+$ git clone https://github.com/xdanielsb/hackcloud.git
+$ cd hackcloud
 ```
 
 

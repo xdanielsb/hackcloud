@@ -1,8 +1,7 @@
 # from keras.preprocessing.image import load_img
 import numpy as np
 import tensorflow as tf
-from keras.applications.vgg16 import (VGG16, decode_predictions,
-                                      preprocess_input)
+from keras.applications.vgg16 import VGG16, decode_predictions, preprocess_input
 from keras.preprocessing.image import img_to_array
 
 

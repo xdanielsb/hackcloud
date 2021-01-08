@@ -93,7 +93,7 @@ export default {
       this.$http
         .post(baseURI, formData, config)
         .then((result) => {
-          this.response = result;
+          this.response = result["data"];
         }).catch(function (error) {
           if (error.response) {
             // Request made and server responded
