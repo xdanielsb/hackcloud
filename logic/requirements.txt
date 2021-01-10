@@ -20,7 +20,7 @@ Flask==1.1.2
 Flask-Cors==3.0.10
 future==0.18.2
 h5py==3.1.0
-httplib2==0.14.0
+httplib2==0.18.0
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.11.2
